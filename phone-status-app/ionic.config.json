@@ -1,0 +1,7 @@
+{
+  "name": "phone-status-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

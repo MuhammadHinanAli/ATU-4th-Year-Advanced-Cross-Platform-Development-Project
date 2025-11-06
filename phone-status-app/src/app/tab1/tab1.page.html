@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Mobile Phone List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item *ngFor="let phone of phoneList">
+      <ion-label>
+        <h2>{{ phone.name }}</h2>
+        <p>Brand: {{ phone.brand }}</p>
+        <p>Price: {{ phone.model }}</p>
+        <p>Price: {{ phone.price }}</p>
+        <ion-thumbnail slot="start">
+          <img [src]="phone.thumbnailURL" alt="{{ phone.name }} image">
+        </ion-thumbnail>
+      </ion-label>
+    </ion-item>
+</ion-content>

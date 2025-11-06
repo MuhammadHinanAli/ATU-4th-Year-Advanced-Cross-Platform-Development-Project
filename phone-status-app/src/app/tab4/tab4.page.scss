@@ -1,0 +1,94 @@
+/* Header and Toolbar Styling */
+ion-header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); // Gradient background
+    padding: 15px;
+}
+
+ion-toolbar {
+    --background: transparent; // Make toolbar background transparent to show gradient
+    --color: white;
+}
+
+ion-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Centering the logout button */
+.center-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+}
+
+/* Styling the logout button */
+.logout-button {
+    --background: linear-gradient(45deg, var(--ion-color-primary), var(--ion-color-secondary));
+    --color: white;
+    --border-radius: 50px; /* Fully rounded button */
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    --height: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    border: none;
+    min-width: 200px; /* Minimum width for consistency */
+    position: relative;
+}
+
+/* Hover effect */
+.logout-button:hover {
+    transform: scale(1.05); /* Slight hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, var(--ion-color-secondary), var(--ion-color-primary));
+}
+
+/* Focus effect */
+.logout-button:focus {
+    outline: none;
+}
+
+.logout-button ion-icon {
+    font-size: 24px; /* Icon size */
+}
+
+/* Styling the text inside the button */
+.button-text {
+    text-align: center;
+}
+
+.button-text .press-here {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.7); /* Slightly faded text */
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .logout-button {
+        min-width: 150px; /* Reduce width for smaller screens */
+    }
+
+    .button-text {
+        font-size: 14px;
+    }
+
+    .button-text .press-here {
+        font-size: 10px;
+    }
+}
